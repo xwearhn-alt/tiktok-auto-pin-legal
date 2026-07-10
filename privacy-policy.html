@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chính sách quyền riêng tư — TikTok Live Auto Pin</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; line-height: 1.6; color: #222; padding: 0 16px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 17px; margin-top: 28px; }
+  .updated { color: #666; font-size: 14px; }
+</style>
+</head>
+<body>
+  <h1>Chính sách quyền riêng tư — TikTok Live Auto Pin</h1>
+  <p class="updated">Cập nhật lần cuối: 08/07/2026</p>
+
+  <p>Tiện ích mở rộng "TikTok Live Auto Pin" ("tiện ích") được phát triển để hỗ trợ người bán hàng
+  tự động xoay vòng ghim sản phẩm khi phát livestream trên TikTok Shop LIVE Manager
+  (<code>shop.tiktok.com</code>).</p>
+
+  <h2>1. Dữ liệu chúng tôi KHÔNG thu thập</h2>
+  <p>Tiện ích không thu thập, không lưu trữ trên máy chủ, và không gửi đi bất kỳ đâu các loại
+  dữ liệu sau: thông tin tài khoản TikTok, thông tin cá nhân (tên, địa chỉ, email thật), danh sách
+  khách hàng, số liệu bán hàng, cookie đăng nhập, lịch sử duyệt web, hay bất kỳ nội dung nào khác
+  trên trang TikTok Shop. Tên và số thứ tự sản phẩm hiển thị trên trang quản lý LIVE chỉ được đọc
+  cục bộ để xác định sản phẩm cần ghim, không rời khỏi trình duyệt của bạn.</p>
+
+  <h2>2. Dữ liệu tiện ích xử lý cục bộ (trên máy bạn)</h2>
+  <ul>
+    <li><strong>Cài đặt của người dùng</strong> (chế độ ghim, thời gian trễ, sản phẩm đã chọn,
+    nhật ký hoạt động) — lưu bằng <code>chrome.storage.local</code>, chỉ tồn tại trên thiết bị
+    của bạn, không đồng bộ lên máy chủ nào.</li>
+    <li><strong>Key bản quyền (license key)</strong> bạn nhập để kích hoạt — được kiểm tra định
+    dạng và hạn sử dụng hoàn toàn cục bộ bằng thuật toán trong tiện ích.</li>
+  </ul>
+
+  <h2>3. Dữ liệu gửi tới máy chủ của chúng tôi (khoá 1 key = 1 thiết bị)</h2>
+  <p>Để đảm bảo mỗi license key chỉ được dùng trên một thiết bị/trình duyệt tại một thời điểm
+  (chống dùng chung key), tiện ích định kỳ (khoảng mỗi 1 phút) gửi <strong>license key bạn đã
+  nhập</strong> và <strong>một mã thiết bị ngẫu nhiên (device ID)</strong> — tự sinh ra, không
+  chứa thông tin định danh cá nhân thật — tới máy chủ riêng của chúng tôi
+  (<code>103.165.145.17:8787</code>, do chính chúng tôi vận hành, không phải bên thứ ba). Máy chủ
+  chỉ dùng 2 giá trị này để xác nhận key có đang được thiết bị khác giữ hay không, trả về kết quả
+  cho phép/từ chối tương ứng, và không lưu trữ hay xử lý thêm bất kỳ dữ liệu nào khác của bạn.
+  Nếu mất kết nối tới máy chủ này, tiện ích mặc định KHÔNG khoá quyền sử dụng.</p>
+
+  <h2>4. Quyền truy cập trang web (host permissions)</h2>
+  <p>Tiện ích chỉ chạy trên <code>https://shop.tiktok.com/streamer/live/product/dashboard*</code>
+  — là trang quản lý sản phẩm khi livestream của chính bạn. Quyền này được dùng duy nhất để đọc
+  danh sách sản phẩm hiển thị trên trang và mô phỏng thao tác bấm nút "Ghim" thay cho việc bạn
+  phải bấm tay. Tiện ích không hoạt động trên bất kỳ trang web nào khác ngoài trang này và máy chủ
+  riêng nêu ở mục 3.</p>
+
+  <h2>5. Chia sẻ dữ liệu với bên thứ ba</h2>
+  <p>Chúng tôi không bán, không chia sẻ, không chuyển giao bất kỳ dữ liệu nào cho bên thứ ba.
+  Dữ liệu duy nhất rời khỏi trình duyệt của bạn (license key + device ID ngẫu nhiên, xem mục 3)
+  chỉ được gửi tới máy chủ do chính chúng tôi vận hành, phục vụ đúng một mục đích là xác thực
+  license key. Việc mua license key được thực hiện qua kênh riêng (Telegram) và không liên quan
+  đến dữ liệu mà tiện ích xử lý trên trình duyệt.</p>
+
+  <h2>6. Liên hệ</h2>
+  <p>Nếu có câu hỏi về chính sách này, vui lòng liên hệ qua Telegram bot hỗ trợ được cung cấp
+  trong phần mô tả tiện ích trên Chrome Web Store.</p>
+</body>
+</html>
