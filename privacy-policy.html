@@ -12,7 +12,7 @@
 </head>
 <body>
   <h1>Chính sách quyền riêng tư — TikTok Live Auto Pin</h1>
-  <p class="updated">Cập nhật lần cuối: 11/07/2026</p>
+  <p class="updated">Cập nhật lần cuối: 12/07/2026</p>
 
   <p>Tiện ích mở rộng "TikTok Live Auto Pin" ("tiện ích") được phát triển để hỗ trợ người bán hàng
   tự động xoay vòng ghim sản phẩm khi phát livestream trên TikTok Shop LIVE Manager
@@ -63,6 +63,21 @@
   không được dùng cho quảng cáo của bên thứ ba và không bị chia sẻ ra ngoài (xem mục 5). Muốn xoá
   email khỏi hệ thống, liên hệ chúng tôi theo mục 6.</p>
 
+  <h2>3c. Cảnh báo Captcha qua Telegram (tính năng miễn phí, tuỳ chọn)</h2>
+  <p>Tiện ích có thể quan sát <strong>cục bộ</strong> giao diện trang LIVE Manager để nhận biết
+  khi TikTok hiển thị màn hình xác nhận Captcha trong phiên live của bạn. Việc nhận biết này chỉ
+  dựa trên sự xuất hiện của phần tử giao diện captcha — tiện ích KHÔNG đọc nội dung captcha,
+  KHÔNG tự giải captcha thay bạn, và KHÔNG gửi nội dung trang lên máy chủ.</p>
+  <p>Nếu bạn <strong>chủ động</strong> bấm nút "Liên kết Telegram để nhận cảnh báo" trong popup
+  và xác nhận trong ứng dụng Telegram, chúng tôi lưu <strong>mã trò chuyện Telegram (chat ID)</strong>
+  của bạn gắn với mã thiết bị (device ID) trên máy chủ nêu ở mục 3, dùng cho mục đích duy nhất:
+  gửi tin nhắn Telegram cảnh báo bạn xác nhận Captcha kịp thời khi đang live (kèm giới thiệu
+  tính năng trả phí nếu bạn đang dùng bản miễn phí). Khi phát hiện captcha, tiện ích chỉ gửi một
+  tín hiệu gồm device ID, license key (nếu có) và email đã đăng nhập (nếu có) tới máy chủ ở mục
+  3, giới hạn tối đa 1 lần mỗi 10 phút. Nếu bạn không liên kết Telegram, không có dữ liệu nào
+  được gửi thêm. Bạn có thể ngừng nhận cảnh báo bất cứ lúc nào bằng cách chặn (block) bot
+  Telegram, hoặc liên hệ theo mục 6 để xoá chat ID khỏi hệ thống.</p>
+
   <h2>4. Quyền truy cập trang web (host permissions)</h2>
   <p>Tiện ích chỉ chạy trên <code>https://shop.tiktok.com/streamer/live/product/dashboard*</code>
   — là trang quản lý sản phẩm khi livestream của chính bạn. Quyền này được dùng duy nhất để đọc
@@ -73,9 +88,10 @@
   <h2>5. Chia sẻ dữ liệu với bên thứ ba</h2>
   <p>Chúng tôi không bán, không chia sẻ, không chuyển giao bất kỳ dữ liệu nào cho bên thứ ba.
   Dữ liệu rời khỏi trình duyệt của bạn (license key + device ID ngẫu nhiên — mục 3; địa chỉ email
-  nếu bạn chủ động đăng nhập Google — mục 3b) chỉ được gửi tới máy chủ do chính chúng tôi vận
-  hành, phục vụ đúng các mục đích đã nêu: xác thực license key, cấp lượt dùng thử và gửi email
-  dịch vụ. Việc mua license key được thực hiện qua kênh riêng (Telegram) và không liên quan
+  nếu bạn chủ động đăng nhập Google — mục 3b; Telegram chat ID nếu bạn chủ động liên kết Telegram
+  — mục 3c) chỉ được gửi tới máy chủ do chính chúng tôi vận hành, phục vụ đúng các mục đích đã
+  nêu: xác thực license key, cấp lượt dùng thử, gửi email dịch vụ và gửi cảnh báo Captcha qua
+  Telegram. Việc mua license key được thực hiện qua kênh riêng (Telegram) và không liên quan
   đến dữ liệu mà tiện ích xử lý trên trình duyệt.</p>
 
   <h2>6. Liên hệ</h2>
